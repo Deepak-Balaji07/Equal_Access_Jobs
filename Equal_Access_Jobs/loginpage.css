@@ -1,0 +1,14 @@
+@charset "UTF-8";
+/* styles.css */
+
+
+.login-card {
+    border: 0;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+}
+
+.login-card h3 {
+    color: #333;
+    font-weight: bold;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Detail Page</title>
+    <link rel="stylesheet" href="details.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Job Title: Software Engineer</h1>
+        <h2>Company: Tech Innovations Inc.</h2>
+        
+        <h3>Qualifications:</h3>
+        <ul>
+            <li>Bachelor's degree in Computer Science or related field</li>
+            <li>2+ years of experience in software development</li>
+            <li>Proficiency in JavaScript, HTML, and CSS</li>
+            <li>Experience with React or Angular frameworks</li>
+            <li>Strong problem-solving skills</li>
+        </ul>
+
+        <h3>Job Description:</h3>
+        <p>
+            We are looking for a passionate Software Engineer to join our team. You will be responsible for developing high-quality software solutions and collaborating with other team members to deliver exceptional user experiences.
+        </p>
+
+        <button id="applyButton">Apply Now</button>
+    </div>
+
+    <div id="applicationModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Application Form</h2>
+            <form id="applicationForm" method="POST" action="http://localhost:3000/submit">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="resume">Upload Resume:</label>
+                <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+                
+                <button type="submit">Submit Application</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="details.js"></script>
+</body>
+</html>
